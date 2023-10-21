@@ -3,10 +3,6 @@
 <head>
     <title>The Key Skin</title>
     <style>
-      body {
-        margin: 0;
-        overflow: hidden;
-      }
       .adjust_img {
         width: 100%;
         height: 100vh;
@@ -18,19 +14,31 @@
         object-fit: cover;
       }
       @media only screen and (min-width: 1026px) {
-          .mobile-only {
-              display:none !important;
-          }
+        body {
+          margin: 0;
+          overflow: hidden;
+          padding: 0;
+          background: url('./assets/img/the-key-skin-desktop.png') no-repeat center center fixed;
+          background-size: cover;
+        }
+        .mobile-only {
+          display:none !important;
+        }
       } 
-      @media only screen and (max-width: 1025px) {
-          .desktop-only {
-              display:none !important;
-          }
+      @media only screen and (max-width: 1025px) { 
+        body {
+          margin: 0;
+          overflow: hidden;
+          padding: 0;
+          background: url('./assets/img/the-key-skin-mobile.png') no-repeat center center fixed;
+          background-size: cover;
+        }
+        .desktop-only {
+          display:none !important;
+        }
       } 
     </style>
 </head>
 <body>
-    <p><img class="adjust_img desktop-only" src="./assets/img/the-key-skin-desktop.png" alt="Desktop Image"></p>
-    <p><img class="adjust_img_mbl mobile-only" src="./assets/img/the-key-skin-mobile.png" alt="Mobile Image"></p>
 </body>
 </html>
