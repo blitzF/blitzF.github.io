@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Image Display Example</title>
+    <title>The Key Skin</title>
     <style>
       body {
-        margin: 0; /* Remove default margin */
-        overflow: hidden; /* Prevent scrollbars */
+        margin: 0;
+        overflow: hidden;
       }
       .adjust_img {
         width: 100%;
-        height: 100vh; /* 100% of the viewport height */
+        height: 100vh;
+        object-fit: cover;
+      }
+      .adjust_img_mbl {
+        width: 100%;
+        height: auto;
         object-fit: cover;
       }
       @media only screen and (min-width: 1026px) {
@@ -26,6 +31,6 @@
 </head>
 <body>
     <p><img class="adjust_img desktop-only" src="./assets/img/the-key-skin-desktop.png" alt="Desktop Image"></p>
-    <p><img class="adjust_img mobile-only" src="./assets/img/the-key-skin-mobile.png" alt="Mobile Image"></p>
+    <p><img class="adjust_img_mbl mobile-only" src="./assets/img/the-key-skin-mobile.png" alt="Mobile Image"></p>
 </body>
 </html>
